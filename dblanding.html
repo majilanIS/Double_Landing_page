@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Landing Page</title>
+    <link rel="stylesheet" href="dblanding.css">
+</head>
+<body>
+    <div class="container">
+        <div class="split left">
+            <h1>Apple</h1>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="split right">
+            <h1>Samsung</h1>
+            <button class="btn">Buy Now</button>
+        </div>
+    </div>
+    <script>
+    
+        const containerE1 = document.querySelector('.container');
+        const leftE1 = document.querySelector('.left');
+        const rightE1 = document.querySelector('.right');
+            // this for the left direction 
+        leftE1.addEventListener('mouseenter', ()=>{
+            containerE1.classList.add('active-left'); 
+        });
+        leftE1.addEventListener('mouseleave', ()=>{
+            containerE1.classList.remove('active-left'); 
+        });
+             // this is for the right direction
+        rightE1.addEventListener('mouseenter', ()=>{
+            containerE1.classList.add('active-right'); 
+        });
+        rightE1.addEventListener('mouseleave', ()=>{
+            containerE1.classList.remove('active-right'); 
+        });
+    </script>
+</body>
+</html>
